@@ -27,14 +27,10 @@ class QuestionVote extends Component {
 
           <div className="d-flex align-items-center mb-4">
             <img
-              src={`https://ui-avatars.com/api/?name=${encodeURI(
-                author.name
-              )}&rounded=true&color=${
-                "#" + Math.random().toString(16).substr(-6)
-              }`}
+              src={author.avatarURL}
               alt={`${author.name} avatar`}
               width="128"
-              className="me-4 align-self-start"
+              className="me-4 rounded-circle"
             />
             <div className="d-flex flex-column  w-100">
               <input

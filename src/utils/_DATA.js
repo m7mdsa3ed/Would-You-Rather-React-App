@@ -2,6 +2,7 @@ let users = {
   m7mdsa3ed: {
     id: 'm7mdsa3ed',
     name: 'Mohamed Saeed',
+    avatarURL: 'https://scontent-hbe1-1.xx.fbcdn.net/v/t1.0-9/116706538_10217855503004838_7859905438327032524_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=v10C-fgYFiEAX8MFkMD&_nc_ht=scontent-hbe1-1.xx&oh=bc97ccc87faec8bb81ff639eb428f247&oe=606D6CAF',
     answers: {
       "8xf0y6ziyjabvozdd253nd": 'optionOne',
       "6ni6ok3ym7mf1p33lnez": 'optionTwo',
@@ -13,6 +14,7 @@ let users = {
   tylermcginnis: {
     id: 'tylermcginnis',
     name: 'Tyler McGinnis',
+    avatarURL: "https://tylermcginnis.com/would-you-rather/tyler.jpg",
     answers: {
       "vthrdm985a262al8qx3do": 'optionOne',
       "xj352vofupe1dqz9emx13r": 'optionTwo',
@@ -22,6 +24,7 @@ let users = {
   johndoe: {
     id: 'johndoe',
     name: 'John Doe',
+    avatarURL: 'https://directemployers.org/wp-content/uploads/2018/08/avatar-JohnDoe.jpg',
     answers: {
       "xj352vofupe1dqz9emx13r": 'optionOne',
       "vthrdm985a262al8qx3do": 'optionTwo',

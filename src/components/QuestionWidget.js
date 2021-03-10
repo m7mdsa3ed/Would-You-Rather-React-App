@@ -16,14 +16,10 @@ class QuestionWidget extends Component {
         <h3 className="text-center mb-4">{author.name} Asks: </h3>
         <div className="d-flex align-items-center">
           <img
-            src={`https://ui-avatars.com/api/?name=${encodeURI(
-              author.name
-            )}&rounded=true&color=${
-              "#" + Math.random().toString(16).substr(-6)
-            }`}
+            src={author.avatarURL}
             alt={`${author.name} avatar`}
             width="128"
-            className="me-4 align-self-start"
+            className="me-4 rounded-circle"
           />
           <ul className="list-unstyled w-100 mb-0">
             <li
@@ -54,11 +50,12 @@ class QuestionWidget extends Component {
   }
 }
 
-function mapStateToProps({ questions, users, authedUser }, { qid }) {
+function mapStateToProps({ questions, users, authedUser }, { qid, totalVotes }) {
   return {
     question: questions[qid],
     author: users[questions[qid].author],
     authedUser,
+    totalVotes
   };
 }
 export default connect(mapStateToProps)(QuestionWidget);
