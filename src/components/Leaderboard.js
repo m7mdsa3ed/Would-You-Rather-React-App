@@ -2,12 +2,6 @@ import { Component } from "react";
 import { connect } from "react-redux";
 
 class Leaderboard extends Component {
-  getScore = (user) => {
-    const { questions, answers } = user;
-    let qs = questions ? Object.keys(questions).length : 0;
-    let as = answers ? Object.keys(answers).length : 0;
-    return qs + as;
-  };
 
   render() {
     const { users } = this.props;
@@ -32,7 +26,7 @@ class Leaderboard extends Component {
                   {user.questions ? Object.keys(user.questions).length : 0}
                 </td>
                 <td>{user.answers ? Object.keys(user.answers).length : 0}</td>
-                <td>{this.getScore(user)}</td>
+                <td>{user.totalScore}</td>
               </tr>
             ))}
           </tbody>
@@ -43,8 +37,20 @@ class Leaderboard extends Component {
 }
 
 function mapStateToProps({ users }) {
+
+  let usersWithScore = Object.entries(users).map(([key, value]) => {
+
+    const { questions, answers } = value;
+
+    let qs = questions ? Object.keys(questions).length : 0;
+    let as = answers ? Object.keys(answers).length : 0;
+
+    value.totalScore = qs + as
+    return value
+  }).sort((a,b) => b.totalScore - a.totalScore)
+
   return {
-    users,
+    users : usersWithScore,
   };
 }
 
