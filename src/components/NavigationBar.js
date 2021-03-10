@@ -28,13 +28,13 @@ class NavigationBar extends Component {
               {this.props.user && (
                 <Fragment>
                   <li className="nav-item">
-                    <Link to="/create" className="nav-link">
+                    <Link to="/add" className="nav-link">
                       New Question
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/leaders" className="nav-link">
-                      Leaders
+                    <Link to="/leaderboard" className="nav-link">
+                      Leaderboard
                     </Link>
                   </li>
 

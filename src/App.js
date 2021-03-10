@@ -32,12 +32,12 @@ class App extends Component {
               return (
                 <Fragment>
                   <Route exact path="/" component={Dashboard}></Route>
-                  <Route path="/create" component={NewQuestion}></Route>
+                  <Route path="/add" component={NewQuestion}></Route>
                   <Route
                     path="/questions/:question_id"
                     component={QuestionPage}
                   ></Route>
-                  <Route path="/leaders" component={Leaderboard}></Route>
+                  <Route path="/leaderboard" component={Leaderboard}></Route>
                 </Fragment>
               );
             } else {
