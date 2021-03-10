@@ -38,11 +38,11 @@ let questions = {
     timestamp: 1467166872634,
     optionOne: {
       votes: ['m7mdsa3ed'],
-      text: 'have horrible short term memory',
+      text: 'Vue',
     },
     optionTwo: {
       votes: [],
-      text: 'have horrible long term memory'
+      text: 'React'
     }
   },
   "6ni6ok3ym7mf1p33lnez": {
@@ -51,11 +51,11 @@ let questions = {
     timestamp: 1468479767190,
     optionOne: {
       votes: [],
-      text: 'become a superhero',
+      text: 'Marvel',
     },
     optionTwo: {
       votes: ['johndoe', 'm7mdsa3ed'],
-      text: 'become a supervillain'
+      text: 'DC'
     }
   },
   "am8ehyc8byjqgar0jgpub9": {
@@ -77,11 +77,11 @@ let questions = {
     timestamp: 1482579767190,
     optionOne: {
       votes: [],
-      text: 'be a front-end developer',
+      text: 'Front-end developer',
     },
     optionTwo: {
       votes: ['m7mdsa3ed'],
-      text: 'be a back-end developer'
+      text: 'Back-end developer'
     }
   },
   "vthrdm985a262al8qx3do": {
@@ -90,11 +90,11 @@ let questions = {
     timestamp: 1489579767190,
     optionOne: {
       votes: ['tylermcginnis'],
-      text: 'find $50 yourself',
+      text: 'PHP',
     },
     optionTwo: {
       votes: ['johndoe'],
-      text: 'have your best friend find $500'
+      text: 'NodeJS'
     }
   },
   "xj352vofupe1dqz9emx13r": {
@@ -103,11 +103,11 @@ let questions = {
     timestamp: 1493579767190,
     optionOne: {
       votes: ['johndoe'],
-      text: 'write JavaScript',
+      text: 'Bootstrap',
     },
     optionTwo: {
       votes: ['tylermcginnis'],
-      text: 'write Swift'
+      text: 'Tailwind CSS'
     }
   },
 }
