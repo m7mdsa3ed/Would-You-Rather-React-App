@@ -23,20 +23,12 @@ class QuestionWidget extends Component {
           />
           <ul className="list-unstyled w-100 mb-0">
             <li
-              className={
-                question.optionOne.votes.includes(authedUser)
-                  ? "p-2 text-center rounded mb-2 border border-primary"
-                  : "p-2 text-center rounded mb-2 border"
-              }
+              className={`p-2 text-center rounded mb-2 border border-primary ${ question.optionOne.votes.includes(authedUser) ? 'bg-primary text-light' : '' } `}
             >
               {question.optionOne.text}
             </li>
             <li
-              className={
-                question.optionTwo.votes.includes(authedUser)
-                  ? "p-2 text-center rounded mb-2 border border-primary"
-                  : "p-2 text-center rounded mb-2 border"
-              }
+              className={`p-2 text-center rounded mb-2 border border-primary ${ question.optionTwo.votes.includes(authedUser) ? 'bg-primary text-light' : '' } `}
             >
               {question.optionTwo.text}
             </li>
